@@ -16,7 +16,7 @@ starting_time = time.time()
 frame_id = 0
 while True:
     _, frame = cap.read()
-    frame_id += 1
+    frame_id += 2
     height, width, channels = frame.shape
     # Detecting objects
     blob = cv2.dnn.blobFromImage(frame, 0.00392, (416, 416), (0, 0, 0), True, crop=False)
